@@ -14,8 +14,8 @@
         <!-- Open Graph meta tags -->
         <meta property="og:title" content="채림의 GPT와 함께한 자소서">
         <meta property="og:description" content="채림의 NCS 훈련으로 웹기획자 되기">
-        <meta property="og:image" content="https://xoxo2812.github.io/Chaerim.github.io/assets/seo/seo.png">
-        <meta property="og:url" content="https://xoxo2812.github.io/Chaerim.github.io">
+        <meta property="og:image" content="https://xoxo2812.github.io/boot5.github.io/assets/seo/seo.png">
+        <meta property="og:url" content="https://xoxo2812.github.io/boot5.github.io">
 
         <title>Chaerim's Portfolio</title>
         <!-- Favicon-->
@@ -38,25 +38,10 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -275,6 +260,28 @@
         <script src="js/myjs.js?work1=swiper&work2=aos"></script>
 
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <style>
+            nav{
+                transition: 0.5s;
+            }
+            .scroll nav{
+                background-color: rgba(255,255,255,.6) !important;
+                border-bottom: 1px solid #222;
+                padding: 0 !important;
+            }
+            .scroll nav a{
+                color: black !important;
+            }
+        </style>
+        <script>
+            $(document).scroll(function(){
+                if($(window).scrollTop() > 80){
+                    $("body").addClass("scroll");
+                }else{
+                    $("body").removeClass("scroll");
+                }
+            })
+        </script>
         <script src="js/myjq.js?work1=scrollhd"></script>
 
     </body>
